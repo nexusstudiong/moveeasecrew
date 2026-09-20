@@ -1,0 +1,138 @@
+/*
+For Pages with Tesimonial Section (Home page, )
+*/
+* {
+    z-index: 1;
+}
+.container h1 {
+    text-align: center;
+    color: #144b31;
+    font-size: 30px;
+    text-shadow: 0 5px 0 #0004;
+    margin-bottom: 30px;
+}
+.card-list .card-item .card-link {
+    user-select: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    overflow: hidden;
+    padding: 5rem 2rem 2rem;
+    background-color: #dfd;
+    box-shadow: 5px 5px 10px #0002;
+    transition: 0.3s;
+    color: #144b31;
+    text-decoration: none;
+    text-align: center;
+}
+.card-list .card-item .card-link::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    aspect-ratio: 1;
+    border-radius: 100%;
+    background-color: #144b31;
+    transition: 0.5s;
+    z-index: 0;
+}
+.card-list .card-item .card-link:hover::before {
+    width: 500%;
+}
+.card-link span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    font-size: 3rem;
+    color: #fff;
+}
+.card-link p {
+    margin-bottom: 1.5rem;
+    font-size: 0.9rem;
+    color: #144b31;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.card-link .imgbox {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.card-link .testimg {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 2px solid #144b31;
+    transition: 0.3s;
+    background-image: url('/images/pfp.png');
+    background-size: cover;
+    box-shadow: 0 0 0 #144b31;
+    background-color: #144b31;
+}
+.card-link h4 {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #144b31;
+    transition: 0.3s;
+}
+.card-link h5 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #144b31;
+    transition: 0.3s;
+}
+.card-link h6 {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #144b31;
+    transition: 0.3s;
+    opacity: 0.5;
+}
+.card-link:hover :is(h4, h5) {
+    color: #fff;
+}
+.card-link:hover :is(h6, p) {
+    color: #dfd;
+}
+.card-link:hover div {
+    border-color: #fff;
+}
+.card-link:active {
+    cursor: grabbing;
+}
+.card-link:hover {
+    color: #144b31;
+}
+.swiper {
+    width: 90vw;
+    margin-bottom: 70px;
+}
+.card-wrapper {
+    max-width: 1500px;
+    margin: 0 60px 35px;
+    padding: 20px 10px;
+    overflow: hidden;
+}
+.card-wrapper .swiper-slide-button {
+    color: #144b31;
+    transform: scale(70%);
+}
+
+@media (max-width: 800px) {
+    .swiper {
+        width: 100%;
+    }
+    .card-wrapper {
+        margin: 0 0 30px 0;
+        padding: 20px 7vw;
+    }
+    .card-wrapper .swiper-slide-button {
+        display: none;
+    }
+}

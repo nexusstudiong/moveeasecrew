@@ -1,0 +1,40 @@
+.up {
+    background-color: #dfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+.up > h1 {
+    color: #144b31;
+    font-weight: 900;
+    font-size: 300px;
+    opacity: 0.2;
+}
+.in {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 90%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.in a {
+    color: #144b31;
+}
+li {
+    text-align: left;
+}
+#succ {
+    font-size: 250px;
+}
+@media (max-width: 800px) {
+    #succ {
+        font-size: 100px;
+    }
+}

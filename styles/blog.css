@@ -1,0 +1,151 @@
+/*
+For all INDIVIDUAL BLOGS
+*/
+
+nav {
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+.blgheader {
+    width: 100%;
+    display: flex;
+    padding: 150px 10vw 100px 10vw;
+    align-items: center;
+}
+.blgheader .img {
+    width: 40%;
+    aspect-ratio: 1.5;
+    background-size: cover;
+    border: 3px solid #144b31;
+}
+.blgheader .blg1 {
+    background-image: url('https:///Blogs/images/blg1.png');
+}
+.blgheader .blg2 {
+    background-image: url('https:///Blogs/images/blg2.png');
+}
+.blgheader .blg3 {
+    background-image: url('https:///Blogs/images/blg3.png');
+}
+.blgheadtxt {
+    width: 60%;
+    margin-left: 50px;
+}
+.blgheadtxt h2 {
+    font-size: 30px;
+    color: #144b31;
+}
+.reest p, .blgheader p, .reest li, .reest a {
+    font-size: 20px;
+    color: #555;
+}
+.reest a {
+    font-size: 17px;
+    color: #555;
+    margin-left: 30px;
+}
+.reest a:hover {
+    color: #000;
+}
+.reest i {
+    margin-right: 7px;
+}
+.reest button {
+    padding: 10px 30px;
+    margin: 10px 0;
+    border-radius: 5px;
+    background-color: #144b31;
+    border: 3px solid #144b31;
+    transition: 0.3s;
+}
+.reest button:hover {
+    background-color: #0000;
+}
+.reest button p {
+    color: #fff;
+    transition: 0.3s;
+}
+.reest button:hover p {
+    color: #144b31;
+}
+ul, ol {
+    padding: auto;
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+.reest {
+    padding: 50px 10vw;
+}
+.content h2 {
+    color: #144b31;
+    margin-bottom: 10px;
+}
+.content {
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+}
+.top {
+    display: flex;
+}
+.content1 {
+    width: 50%;
+    padding: 30px;
+}
+.content2 {
+    width: 100%;
+    padding: 30px;
+}
+.right {
+    border-left: 1px solid #ddd;
+}
+.bottom {
+    border: 1px solid #ddd;
+}
+
+@media (max-width: 800px) {
+    nav {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    .blgheader {
+        flex-direction: column;
+        padding: 50px 5vw 100px 5vw;
+    }
+    .blgheadtxt {
+        width: 100%;
+        margin-left: 0;
+    }
+    .blgheader .img {
+        width: 100%;
+        margin-bottom: 40px;
+    }
+    .top {
+        flex-direction: column;
+    }
+    .reest {
+        padding: 0 5vw;
+    }
+    .reest div {
+        border: 0;
+    }
+    .content1 {
+        width: 100%;
+        padding: 15px 0;
+    }
+    .content2 {
+        padding: 15px 0;
+    }
+    .reest button {
+        padding: 5px 20px;
+    }
+    .reest button:hover {
+        background-color: #144b31;
+    }
+    .reest button:hover p {
+        color: #fff;
+    }
+    ol {
+        margin-left: 20px;
+    }
+}

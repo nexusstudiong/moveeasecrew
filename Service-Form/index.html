@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/images/icon.png?v=1.0.1" type="image">
+    <title>Service Form - MoveEase Crew Limited</title>
+    <link rel="stylesheet" href="/styles/style.css?v=1.0.11">
+    <link rel="stylesheet" href="/styles/style2.css?v=1.0.10">
+    <link rel="stylesheet" href="/styles/paybox.css?v=1.0.4">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@1,600&family=Fraunces:wght@100;700&family=IBM+Plex+Sans+Arabic:wght@200&family=Montserrat:ital,wght@1,500;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/8270bba71e.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+</head>
+<body>
+    <div id="tag" style="display: none;">nform</div>
+    <nav id="navv">
+    </nav>
+    <div class="paybox" id="paybox">
+    <div class="pbexp">
+        <br><br>
+    <h1>BOOK A WORKER</h1>
+    <p>
+        Share your details below for property inspection. We’ll email pricing and payment steps, then start your service after confirmation.
+        <br><br>
+        <b>Special Offer: Book on Sunday for 10% off—don’t miss out!</b>
+        <br><br>
+        Fill out the form to book today!
+    </p>
+    </div>
+    <form action="https://formsubmit.co/4d19dd862572e6ce90622e889bb87418" method="POST">
+
+    <input type="text" name="_honey" style="display: none;">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="/Success">
+
+    <label for="First&nbsp;Name">First Name <span>*</span></label>
+    <input type="text" name="First&nbsp;Name" id="" placeholder="eg. Kareem" required>
+    <label for="Last&nbsp;Name">Last Name <span>*</span></label>
+    <input type="text" name="Last&nbsp;Name" id="" placeholder="eg. Smith" required>
+    <label for="Address">Address <span>*</span></label>
+    <input type="text" name="Address" id="" placeholder="eg. Wooden Plaza, Okoko Expy." required>
+    <label for="Landmark">Closest Landmark</label>
+    <input type="text" name="Landmark" id="" placeholder="eg. Freedom Park">
+    <label for="City">City <span>*</span></label>
+    <input type="text" name="City" id="" placeholder="eg. Ibadan" required>
+    <label for="State">State <span>*</span></label>
+    <input type="text" name="State" id="" placeholder="eg. Oyo" required>
+    <label for="E-mail">Email (We will get back to you here) <span>*</span></label>
+    <input type="email" name="E-mail" id="" placeholder="eg. name@example.com" required>
+    <label for="Phone">Phone Number</label>
+    <input type="number" name="Phone" id="" placeholder="eg. 09012345678">
+
+    <label for="date">Preferred Date and Time <span>*</span></label>
+    <input type="date" name="date" id="" required>
+    <input type="time" name="time" id="" required>
+    
+    <label for="First&nbsp;Service"><b>What services do you need?</b> <span>*</span></label>
+    <div class="addserv">
+        <select name="First&nbsp;Service" id="serv1" onchange="showSecondDropdown()" required>
+            <option value="">-- Select a Service --</option>
+            <option value="Moving In & Out Assistance">Moving In & Out Assistance</option>
+            <option value="Cleaning & Organizing">Cleaning & Organizing</option>
+            <option value="Curtains & Window Blinds ">Curtains & Window Blinds </option>
+            <option value="Furniture Making and Setup">Furniture Making and Setup</option>
+            <option value="Furniture Repairs">Furniture Repairs</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Painting">Painting</option>
+            <option value="Plumbing">Plumbing</option>
+            <option value="AC Installation & Servicing">AC Installation & Servicing</option>
+            <option value="Solar Installation">Solar Installation</option>
+            <option value="Home Appliance Repairs & Installation">Home Appliance Repairs & Installation</option>
+            <option value="Generator Fixes & Servicing">Generator Fixes & Servicing</option>
+        </select>
+        <div id="serv1ac" style="display: none;">
+            <select name="Service&nbsp;Description" id="serv1a">
+                <option value="">-- Select Service Description--</option>
+            </select>
+        </div>
+        <div id="serv2c" style="display: none;">
+            <select name="Second&nbsp;Service" id="serv2" onchange="showThirdDropdown()">
+                <option value="">-- Select Additional Service --</option>
+            </select>
+        </div>
+        <div id="serv2ac" style="display: none;">
+            <select name="Second&nbsp;Service&nbsp;Description" id="serv2a">
+                <option value="">-- Select Service Description--</option>
+            </select>
+        </div>
+        <div id="serv3c" style="display: none;">
+            <select name="Third&nbsp;Service" id="serv3" onchange="showFourthDropdown()">
+                <option value="">-- Select Additional Service --</option>
+            </select>
+        </div>
+        <div id="serv3ac" style="display: none;">
+            <select name="Third&nbsp;Service&nbsp;Description" id="serv3a">
+                <option value="">-- Select Service Description--</option>
+            </select>
+        </div>
+        <div id="serv4c" style="display: none;">
+            <select name="Forth&nbsp;Service" id="serv4" onchange="showFifthDropdown()">
+                <option value="">-- Select Additional Service --</option>
+            </select>
+        </div>
+        <div id="serv4ac" style="display: none;">
+            <select name="Fourth&nbsp;Service&nbsp;Description" id="serv4a">
+                <option value="">-- Select Service Description--</option>
+            </select>
+        </div>
+    </div>
+    <label for="msg">Additional Message (Optional)</label>
+    <textarea name="Additional&nbsp;Message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+    <div class="tac">
+        <input type="checkbox" name="Ts&Cs" id="terms" required>
+        <label for="Ts&Cs">By submitting this form, you confirm that you have read and agree to <a href="/Terms-and-Conditions/">Terms of Use</a> and <a href="/Terms-and-Conditions#privacy">Privacy Policy</a>.</label>
+    </div>
+
+    <script>
+    const services = [
+    { value: 'Moving In & Out Assistance', text: 'Moving In & Out Assistance' },
+    { value: 'Cleaning & Organizing', text: 'Cleaning & Organizing' },
+    { value: 'Curtains & Window Blinds ', text: 'Curtains & Window Blinds ' },
+    { value: 'Furniture Making and Setup', text: 'Furniture Making and Setup' },
+    { value: 'Furniture Repairs', text: 'Furniture Repairs' },
+    { value: 'Electrical', text: 'Electrical' },
+    { value: 'Painting', text: 'Painting' },
+    { value: 'Plumbing', text: 'Plumbing' },
+    { value: 'AC Installation & Servicing', text: 'AC Installation & Servicing' },
+    { value: 'Solar Installation', text: 'Solar Installation' },
+    { value: 'Home Appliance Repairs & Installation', text: 'Home Appliance Repairs & Installation' },
+    { value: 'Generator Fixes & Servicing', text: 'Generator Fixes & Servicing' }
+    ];
+    
+    const sMove = [
+        "Moving In & Out Assistance",
+        { value: 'Single Room Moving', text: 'Single Room Moving' },
+        { value: 'Apartment Moving', text: 'Apartment Moving' },
+        { value: 'Office Relocation', text: 'Office Relocation' },
+        { value: 'Packing & Unpacking', text: 'Packing & Unpacking' },
+        { value: 'Furniture Disassembly & Assembly', text: 'Furniture Disassembly & Assembly' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+    
+    const sPaint = [
+        "Painting",
+        { value: '1 Room', text: '1 Room' },
+        { value: '2 Rooms', text: '2 Rooms' },
+        { value: 'Apartment', text: 'Apartment' },
+        { value: 'Full House', text: 'Full House' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sElec = [
+        "Electrical",
+        { value: 'Socket Repair', text: 'Socket Repair' },
+        { value: 'Lighting Installation', text: 'Lighting Installation' },
+        { value: 'Tracing & Fix (Troubleshooting)', text: 'Tracing & Fix (Troubleshooting)' },
+        { value: 'Full Wiring (Residential)', text: 'Full Wiring (Residential)' },
+        { value: 'Full Wiring (Commercial)', text: 'Full Wiring (Commercial)' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sPlumb = [
+        "Plumbing",
+        { value: 'Leak Repair', text: 'Leak Repair' },
+        { value: 'Pipe Fitting', text: 'Pipe Fitting' },
+        { value: 'Bathroom Installation', text: 'Bathroom Installation' },
+        { value: 'Kitchen Installation', text: 'Kitchen Installation' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sCurt = [
+        "Curtains & Window Blinds ",
+        { value: '1 Window', text: '1 Window' },
+        { value: '2-5 Windows', text: '2-5 Windows' },
+        { value: 'Full Apartment', text: 'Full Apartment' },
+        { value: 'Office/Commercial Space', text: 'Office/Commercial Space' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sClean = [
+        "Cleaning & Organizing",
+        { value: '1 Bedroom Apartment', text: '1 Bedroom Apartment' },
+        { value: '2-3 Bedroom Apartment', text: '2-3 Bedroom Apartment' },
+        { value: 'Duplex/House', text: 'Duplex/House' },
+        { value: 'Office/Commercial Cleaning', text: 'Office/Commercial Cleaning' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sAc = [
+        "AC Installation & Servicing",
+        { value: '1 HP', text: '1 HP' },
+        { value: '1.5 HP', text: '1.5 HP' },
+        { value: '2 HP', text: '2 HP' },
+        { value: 'Servicing (Any Size)', text: 'Servicing (Any Size)' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sSolar = [
+        "Solar Installation",
+        { value: 'Small Setup (1-2 Rooms)', text: 'Small Setup (1-2 Rooms)' },
+        { value: 'Medium Setup (Apartment)', text: 'Medium Setup (Apartment)' },
+        { value: 'Large Setup (Office/Duplex)', text: 'Large Setup (Office/Duplex)' },
+        { value: 'Custom Solar System', text: 'Custom Solar System' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sHome = [
+        "Home Appliance Repairs & Installation",
+        { value: 'Washing Machine', text: 'Washing Machine' },
+        { value: 'Refrigerator', text: 'Refrigerator' },
+        { value: 'Water Heater', text: 'Water Heater' },
+        { value: 'Oven/Gas Cooker', text: 'Oven/Gas Cooker' },
+        { value: 'Generator', text: 'Generator' },
+        { value: 'DSTV Installation', text: 'DSTV Installation' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sFurnM = [
+        "Furniture Making and Setup",
+        { value: 'Sofa', text: 'Sofa' },
+        { value: 'Wardrobe', text: 'Wardrobe' },
+        { value: 'Bed', text: 'Bed' },
+        { value: 'Office Furniture', text: 'Office Furniture' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sFurnR = [
+        "Furniture Repairs",
+        { value: 'Polishing/Repainting', text: 'Polishing/Repainting' },
+        { value: 'Door/Lock Fix', text: 'Door/Lock Fix' },
+        { value: 'Kitchen Cabinet Repair', text: 'Kitchen Cabinet Repair' },
+        { value: 'Joint Fabric Replacement', text: 'Joint Fabric Replacement' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+
+    const sGen = [
+        "Generator Fixes & Servicing",
+        { value: 'Basic Servicing', text: 'Basic Servicing' },
+        { value: 'Engine Repair', text: 'Engine Repair' },
+        { value: 'Electrical Fault Fix', text: 'Electrical Fault Fix' },
+        { value: 'Starter/Carburetor Fix', text: 'Starter/Carburetor Fix' },
+        { value: 'Home Generator Installation', text: 'Home Generator Installation' },
+        { value: 'Others', text: 'Others (Specify Below)' }
+    ];
+    
+    let servv = [sMove, sPaint, sElec, sPlumb, sCurt, sClean, sAc, sSolar, sHome, sFurnM, sFurnR, sGen];
+
+    function showSecondDropdown() {
+        const selectedValue = document.getElementById('serv1').value;
+
+        const dd1a = document.getElementById('serv1a');
+        
+        const dd1 = document.getElementById('serv1');
+        const dd2 = document.getElementById('serv2');
+
+        const c1a = document.getElementById('serv1ac');
+        const c2a = document.getElementById('serv2ac');
+        const c3a = document.getElementById('serv3ac');
+        const c4a = document.getElementById('serv4ac');
+
+        const c2 = document.getElementById('serv2c');
+        const c3 = document.getElementById('serv3c');
+        const c4 = document.getElementById('serv4c');
+
+        dd2.innerHTML = '<option value="">-- Select Additional Service --</option>';
+
+        if (selectedValue) {
+            c1a.style.display = 'block';
+            c2.style.display = 'block';
+            c2a.style.display = 'none';
+            c3.style.display = 'none';
+            c3a.style.display = 'none';
+            c4.style.display = 'none';
+            c4a.style.display = 'none';
+
+            dd1.style.borderRadius = "20px 20px 5px 5px";
+
+            const remainingServices = services.filter(service => service.value !== selectedValue);
+
+            remainingServices.forEach(service => {
+                const option = document.createElement('option');
+                option.value = service.value;
+                option.textContent = service.text;
+                dd2.appendChild(option);
+            });
+            dd1a.innerHTML = `<option value="">-- Select Service Description --</option>`;
+            for (let i = 0; i < servv.length; i++) {
+                if (selectedValue == servv[i][0]) {
+                    
+                    const remainingServices2 = servv[i].filter(service => service.value);
+
+                    remainingServices2.forEach(service => {
+                        const option = document.createElement('option');
+                        option.value = service.value;
+                        option.textContent = service.text;
+                        dd1a.appendChild(option);
+                    });
+                }
+            }
+            console.log('firsstserv');
+        } else {
+            c2.style.display = 'none';
+            c3.style.display = 'none';
+            c4.style.display = 'none';
+        }
+    }
+
+    function showThirdDropdown() {
+        const selectedValue = document.getElementById('serv1').value;
+        const selectedValue2 = document.getElementById('serv2').value;
+
+        const dd2a = document.getElementById('serv2a');
+        
+        const dd2 = document.getElementById('serv2');
+        const dd3 = document.getElementById('serv3');
+
+        const c2a = document.getElementById('serv2ac');
+        const c3a = document.getElementById('serv3ac');
+        const c4a = document.getElementById('serv4ac');
+
+        const c3 = document.getElementById('serv3c');
+        const c4 = document.getElementById('serv4c');
+
+        dd2.style.borderRadius = "20px 20px 5px 5px";
+
+        dd3.innerHTML = '<option value="">-- Select Additional Service --</option>';
+
+        if (selectedValue2) {
+            c2a.style.display = 'block';
+            c3.style.display = 'block';
+            c3a.style.display = 'none';
+            c4.style.display = 'none';
+            c4a.style.display = 'none';
+
+            const exc = [selectedValue, selectedValue2]
+            const remainingServices = services.filter(service => !exc.includes(service.value));
+
+            remainingServices.forEach(service => {
+                const option = document.createElement('option');
+                option.value = service.value;
+                option.textContent = service.text;
+                dd3.appendChild(option);
+            });
+            dd2a.innerHTML = `<option value="">-- Select Service Description --</option>`;
+            for (let i = 0; i < servv.length; i++) {
+                if (selectedValue2 == servv[i][0]) {
+                    
+                    const remainingServices2 = servv[i].filter(service => service.value);
+
+                    remainingServices2.forEach(service => {
+                        const option = document.createElement('option');
+                        option.value = service.value;
+                        option.textContent = service.text;
+                        dd2a.appendChild(option);
+                    });
+                }
+            }
+            console.log('secondserv');
+        } else {
+            c3.style.display = 'none';
+            c4.style.display = 'none';
+        }
+    }
+
+    function showFourthDropdown() {
+        const selectedValue = document.getElementById('serv1').value;
+        const selectedValue2 = document.getElementById('serv2').value;
+        const selectedValue3 = document.getElementById('serv3').value;
+
+        const dd3a = document.getElementById('serv3a');
+        
+        const dd3 = document.getElementById('serv3');
+        const dd4 = document.getElementById('serv4');
+
+        const c3a = document.getElementById('serv3ac');
+        const c4a = document.getElementById('serv4ac');
+
+        const c4 = document.getElementById('serv4c');
+
+        dd3.style.borderRadius = "20px 20px 5px 5px";
+
+        dd4.innerHTML = '<option value="">-- Select Additional Service --</option>';
+
+        if (selectedValue3) {
+            c3a.style.display = 'block';
+            c4.style.display = 'block';
+            c4a.style.display = 'none';
+
+            const exc = [selectedValue, selectedValue2, selectedValue3]
+            const remainingServices = services.filter(service => !exc.includes(service.value));
+
+            remainingServices.forEach(service => {
+                const option = document.createElement('option');
+                option.value = service.value;
+                option.textContent = service.text;
+                dd4.appendChild(option);
+            });
+            dd3a.innerHTML = `<option value="">-- Select Service Description --</option>`;
+            for (let i = 0; i < servv.length; i++) {
+                if (selectedValue3 == servv[i][0]) {
+                    
+                    const remainingServices2 = servv[i].filter(service => service.value);
+
+                    remainingServices2.forEach(service => {
+                        const option = document.createElement('option');
+                        option.value = service.value;
+                        option.textContent = service.text;
+                        dd3a.appendChild(option);
+                    });
+                }
+            }
+            console.log('thirdserv');
+        } else {
+            c4.style.display = 'none';
+        }
+    }
+
+    function showFifthDropdown() {
+            
+        const selectedValue4 = document.getElementById('serv4').value;
+
+        const dd4a = document.getElementById('serv4a');
+        const dd4 = document.getElementById('serv4');
+
+        const c4a = document.getElementById('serv4ac');
+
+        dd4.style.borderRadius = "20px 20px 5px 5px";
+
+        if (selectedValue4) {
+            c4a.style.display = 'block';
+            dd4a.innerHTML = `<option value="">-- Select Service Description --</option>`;
+            for (let i = 0; i < servv.length; i++) {
+                if (selectedValue4 == servv[i][0]) {
+                    
+                    const remainingServices2 = servv[i].filter(service => service.value);
+
+                    remainingServices2.forEach(service => {
+                        const option = document.createElement('option');
+                        option.value = service.value;
+                        option.textContent = service.text;
+                        dd4a.appendChild(option);
+                    });
+                }
+            }
+        }
+    }
+    </script>
+
+    <input type="submit" class="submit">
+    </form>
+    </div>
+  <footer id="footer">
+  </footer>
+
+    <script src="/scripts/common-elements.js?v=1.0.14"></script>
+    <script src="/scripts/hamb.js"></script>
+</body>
+</html>

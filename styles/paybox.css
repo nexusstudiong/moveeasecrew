@@ -1,0 +1,139 @@
+.paybox {
+    width: 100%;
+    background-color: #aba;
+    display: flex;
+    overflow: hidden;
+}
+.paybox form {
+    display: flex;
+    flex-direction: column;
+    padding: 90px 50px 50px 50px;
+    width: 50%;
+    background-color: #fff;
+    height: 100%;
+    gap: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100vh;
+}
+.paybox form::-webkit-scrollbar:horizontal {
+    display: none;
+}
+.paybox .pbexp {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 20px;
+    color: #fff;
+    background-color: #144b31;
+    padding: 50px;
+    width: 50%;
+    height: 100vh;
+}
+.paybox .pbexp h1 {
+    text-shadow: 0 5px 0 #ab5e00;
+}
+.paybox form h2 {
+    font-size: 25px;
+}
+.paybox form label {
+    font-size: 13px;
+    color: #144b31;
+    font-weight: 500;
+}
+.paybox form label span{
+    color: #f00;
+}
+.paybox .addserv {
+    border: 1px solid #aaa;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+    padding: 15px;
+    border-radius: 30px;
+    background-color: #aaa;
+}
+#serv2c select, #serv3c select, #serv4c select {
+    width: 100%;
+    margin-top: 8px;
+}
+#serv1, #serv2c select, #serv3c select, #serv4c select {
+    border-radius: 20px;
+}
+#serv1ac select, #serv2ac select, #serv3ac select, #serv4ac select {
+    width: 100%;
+    margin-top: 0px;
+    border-radius: 5px 5px 20px 20px;
+}
+.paybox form input, .paybox form textarea, .paybox form select {
+    padding: 8px 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    font-size: 16px;
+    transform: scale(10px);
+}
+.paybox form .file-in::-webkit-file-upload-button {
+    background-color: transparent;
+    border: 0;
+    border-right: 1px solid #888;
+    padding-right: 13px;
+    margin-right: 13px;
+    color: #144b31;
+    font-weight: 700;
+}
+.paybox form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+.tac {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin: 15px 0;
+}
+.tac input {
+    margin-top: 4px;
+}
+.tac label a {
+    text-decoration: underline;
+    color: #00f;
+}
+.paybox .submit {
+    width: fit-content;
+    padding: 13px 50px;
+    font-size: 17px;
+    background-color: #144b31;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid #144b31;
+}
+.paybox .submit:hover {
+    border: 3px solid #144b31;
+    background-color: #fff;
+    color: #144b31;
+}
+#footer {
+    display: none;
+}
+@media (max-width: 800px) {
+    .paybox {
+        flex-direction: column;
+        opacity: 1;
+        left: 25px;
+    }
+    .paybox form {
+        width: 100%;
+        height: fit-content;
+        padding: 50px 20px 20px 20px;
+    }
+    .paybox .pbexp {
+        width: 100%;
+        padding: 50px 20px;
+        height: fit-content;
+    }
+    #footer {
+        display: block;
+    }
+}

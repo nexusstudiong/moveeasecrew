@@ -1,0 +1,167 @@
+/*
+For 'Services' Page and all Services Pages and Contact Us Page
+*/
+
+header {
+    width: 100%;
+    height: 110vh;
+    background-position: top;
+    background-size: cover;
+    margin: 0;
+}
+.header {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    row-gap: 10px;
+    background-color: #0308;
+    text-align: center;
+}
+.pagenav {
+    display: flex;
+    color: #fff;
+    font-weight: 400;
+    font-size: 15px;
+    align-items: center;
+    gap: 12px;
+}
+.pagenav i {
+    font-size: 11px;
+}
+header a {
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+header h1 {
+    font-size: 60px;
+    line-height: 70px;
+    text-align: center;
+}
+header button {
+    font-size: 15px;
+    padding: 12px 50px;
+    background-color: #144b31;
+    border: 1px solid #144b31;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 10px;
+}
+header button:hover {
+    background-color: #2dd217;
+}
+.curve {
+    height: 60px;
+    width: 50vw;
+    border-radius: 100px 100px 0 0;
+    transform: translateY(-100%) translateX(25vw);
+    background-color: #fff;
+}
+.swp {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 100px;
+    padding: 0 7vw;
+}
+.swp h1 {
+    font-size: 40px;
+    line-height: 50px;
+    color: #144b31;
+    margin-bottom: 80px;
+}
+.left {
+    text-align: left;
+}
+.scard {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    column-gap: 1%;
+    text-align: left;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.scards {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.scards .img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.scards .img img {
+    height: 103%;
+}
+.scards p {
+    font-size: 18px;
+    font-weight: 500;
+    color: #144b31;
+    line-height: 17px;
+}
+.scards p span {
+    font-size: 13px;
+    color: #555;
+}
+.scards a {
+    color: #144b31;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 0;
+}
+.scards a:hover {
+    color: #2dd217;
+}
+
+@media (max-width: 800px) {
+    header {
+        width: 100%;
+        height: 50vh;
+    }
+    .header {
+        padding: 0 20px;
+    }
+    header h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+    header button {
+        padding: 12px 25px;
+    }
+    .curve {
+        transform: none;
+        opacity: 0;
+    }
+    .swp h1 {
+        font-size: 26px;
+        line-height: 30px;
+        color: #144b31;
+        margin-bottom: 50px;
+    }
+    .scard {
+        flex-direction: column;
+        row-gap: 30px;
+    }
+    .scards {
+        width: 100%;
+    }
+    .scards .img img {
+        width: 100%;
+        height: auto;
+    }
+}

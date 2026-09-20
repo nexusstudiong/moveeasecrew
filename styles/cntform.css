@@ -1,0 +1,141 @@
+/*
+For Contact Page
+*/
+
+.cntform {
+    width: 100%;
+    display: flex;
+    border-radius: 30px 0;
+    overflow: hidden;
+}
+.frm1 {
+    width: 50%;
+    height: auto;
+    padding: 100px 5vw;
+    background-color: #144b31;
+    color: #fff;
+}
+.frm11 {
+    border-bottom: 1px solid #aaa;
+}
+.frm11 h1 {
+    font-size: 50px;
+    line-height: 50px;
+    margin-bottom: 30px;
+}
+.frm11 p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.frm12 {
+    padding: 50px 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 25px;
+}
+.frm12 a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    opacity: 0.8;
+    width: fit-content;
+}
+.frm12 a:hover {
+    opacity: 1;
+}
+.frm12 a i {
+    font-size: 20px;
+}
+.frm12 p {
+    font-size: 25px;
+    font-weight: bold;
+}
+.frm {
+    background-color: #dfd;
+    width: 50%;
+    padding: 70px;
+}
+.frm form {
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 10px;
+}
+.frm form h2 {
+    font-size: 25px;
+}
+.frm form label {
+    font-size: 13px;
+    color: #144b31;
+    font-weight: 500;
+}
+.frm form label span{
+    color: #f00;
+}
+.frm form input, .frm form textarea {
+    padding: 8px 10px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+.frm form textarea {
+    resize: vertical;
+    min-height: fit-content;
+}
+.tac {
+    width: 100%;
+    display: flex;
+    align-items: start;
+    gap: 10px;
+    margin: 15px 0;
+}
+.tac input {
+    margin-top: 4px;
+}
+.tac label a {
+    text-decoration: underline;
+    color: #00f;
+}
+.frm .submit {
+    width: fit-content;
+    padding: 13px 50px;
+    font-size: 17px;
+    background-color: #144b31;
+    color: #fff;
+    font-weight: bold;
+    border: 3px solid #144b31;
+}
+.frm .submit:hover {
+    border: 3px solid #144b31;
+    background-color: #fff;
+    color: #144b31;
+}
+@media (max-width: 800px) {
+    .cntform {
+        flex-direction: column;
+        border-radius: 0;
+    }
+    .frm1 {
+        width: 100%;
+    }
+    .frm {
+        width: 100%;
+        padding: 0;
+    }
+    .frm11 h1 {
+        font-size: 30px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+    .curve {
+        display: none;
+    }
+    .frm .submit {
+        width: 100%;
+        padding: 10px 50px;
+    }
+}
